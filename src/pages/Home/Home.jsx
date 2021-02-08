@@ -6,9 +6,10 @@ const Home = () => {
   );
   return (
   <div>
+    <h3 className="py-8 justify-center ml-10">You can see your search history here : </h3>
     {fetchedResults && 
       fetchedResults.length &&
-      fetchedResults.map((item) => <li>{item}</li> )}
+      fetchedResults.map((item) => <li className="ml-10">{item}</li> )}
   </div>
   );
 };

@@ -7,22 +7,22 @@ import Job from "./pages/Job/Job.jsx";
 import Skill from "./pages/Skill/Skill.jsx";
 
 const App = () => {
-  const [localStorageHistory, setLocalStorageHistory] = useState([]);
-
   return (
     <Router>
       <div className="App">
-        <Header />
-        <hr />
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/jobs">
-          <Job />
-        </Route>
-        <Route path="/skills">
-          <Skill />
-        </Route>
+        <div className="container">
+          <Header />
+          <hr />
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/jobs">
+            <Job />
+          </Route>
+          <Route path="/skills">
+            <Skill />
+          </Route>
+        </div>
       </div>
     </Router>
   );

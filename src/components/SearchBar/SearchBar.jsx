@@ -14,14 +14,14 @@ const SearchBar = () => {
 
   return (
     <div>
-      <form>
+      <form className="py-8">
         <input
-          className="searchbar"
+          className="searchbar px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full"
           type="text"
           onChange={(event) => setState(event.target.value)}
-          placeholder="Type to search"
+          placeholder="Type to search your next dream job"
         ></input>
-        <div className="searchbar_suggestions">
+        <div className="searchbar_suggestions container-xs mx-auto">
           {suggestions &&
             suggestions.map((suggest) => (
               <Link to={`/jobs/${suggest.uuid}`} key={suggest.uuid}>

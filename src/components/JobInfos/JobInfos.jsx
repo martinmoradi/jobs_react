@@ -31,7 +31,7 @@ const JobInfos = () => {
       {jobSkills &&
         jobSkills.map((skill) => (
           <Link to={`/skills/${skill.skill_uuid}`} key={skill.uuid}>
-            <li>
+            <li className="ml-12">
               <strong>{skill.skill_name} :</strong> {skill.description}
             </li>
           </Link>

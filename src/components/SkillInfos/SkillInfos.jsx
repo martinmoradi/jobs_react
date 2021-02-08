@@ -7,7 +7,6 @@ const SkillInfos = () => {
   const [relatedJobs, setRelatedJobs] = useState();
 
   useEffect(() => {
-    console.log(skillUuid);
     fetchRelatedJobs(skillUuid, setRelatedJobs);
   }, [skillUuid]);
 
