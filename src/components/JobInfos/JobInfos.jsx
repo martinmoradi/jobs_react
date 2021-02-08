@@ -24,7 +24,7 @@ const JobInfos = () => {
   }, [currentJob]);
 
   return (
-    <div>
+    <div className="ml-12">
       {currentJob && <h1>{currentJob.title}</h1>}
       {parentJob && <h2>{parentJob.title}</h2>}
       {parentJob && <p>{parentJob.description}</p>}

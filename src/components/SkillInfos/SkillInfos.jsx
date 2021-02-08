@@ -10,10 +10,8 @@ const SkillInfos = () => {
     fetchRelatedJobs(skillUuid, setRelatedJobs);
   }, [skillUuid]);
 
-  useEffect(() => {}, [relatedJobs]);
-
   return (
-    <div>
+    <div className="ml-12">
       {relatedJobs && <h1>{relatedJobs.skill_name}</h1>}
       {relatedJobs &&
         relatedJobs.jobs &&
