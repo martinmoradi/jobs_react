@@ -3,7 +3,7 @@ import fetchJob from "../../helpers/fetchJob";
 import fetchSkills from "../../helpers/fetchSkills";
 import fetchParentJob from "../../helpers/fetchParentJob";
 import { Link, useParams } from "react-router-dom";
-import historyHelper from "../../helpers/localStorageHistory";
+import historyHelper from "../../helpers/historyHelper";
 
 const JobInfos = () => {
   const { jobUuid } = useParams();
